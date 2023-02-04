@@ -1,0 +1,124 @@
+html, body {
+  margin: auto;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: hsl(0, 0%, 95%);
+  border: none;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 25px;
+  font-family: 'Lexend Deca';
+  display: inline-block;
+  margin-top: 40px;
+  cursor: pointer;
+}
+
+.column1 {
+  background-color: hsl(31, 77%, 52%);
+  border-radius: 10px 0px 0px 10px;
+}
+
+.column1 > button {
+  color: hsl(31, 77%, 52%);
+
+}
+
+.column1 > button:active{
+  background-color:  hsl(31, 77%, 52%);
+  border: 2px solid white;
+  color: white;
+}
+
+
+.column2 {
+  background-color: hsl(184, 100%, 22%);
+}
+
+.column2 > button {
+  color:  hsl(184, 100%, 22%);
+}
+
+.column2 > button:active{
+  background-color:  hsl(184, 100%, 22%);
+  border: 2px solid white;
+  color: white;
+}
+
+.column3 {
+  background-color: hsl(179, 100%, 13%); 
+  border-radius: 0px 10px 10px 0px;
+}
+
+.column3 > button {
+  color:  hsl(179, 100%, 13%);
+}
+
+.column3 > button:active{
+  background-color:  hsl(179, 100%, 13%);
+  border: 2px solid white;
+  color: white;
+}
+
+.flex-container{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  margin: auto;
+  width: 55%;
+  height: 400px;
+  margin-top: 10%;
+}
+
+.flex-container > div {
+  margin: 0px;
+  padding: 40px;
+  flex: 33.3%;
+  height: 450px;
+}
+
+h1 {
+  color: hsl(0, 0%, 95%);
+  font-family: 'Big Shoulders Display';
+  font-weight: 700;
+  letter-spacing: 2px;
+  padding-bottom: 2rem;
+}
+
+.icon {
+  margin: 20px 0px;
+}
+
+
+@media (max-width: 850px) {
+  .flex-container {
+    width: 90%;
+  }
+  .flex-container > div {
+    flex: 100%;
+  }
+
+  .column1 {
+    border-radius: 10px 10px 0px 0px;
+  }
+
+  .column3 {
+    border-radius: 0px 0px 10px 10px;
+  }
+}
+
+.text {
+  color: hsla(0, 0%, 100%, 0.75);
+  font-family: 'Lexend Deca';
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.6;
+}
